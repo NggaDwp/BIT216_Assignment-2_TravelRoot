@@ -1,0 +1,8 @@
+.chart-container {
+    width: 100%; /* Adjust this according to your layout */
+    max-width: 800px; /* Set maximum width */
+    height: 400px; /* Set a fixed height */
+    margin: auto; /* Center the container if needed */
+    overflow: hidden; /* Hide overflow to prevent height changes */
+  }
+  
