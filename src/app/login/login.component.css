@@ -1,0 +1,56 @@
+.login-container {
+  background-color: #f8f6f6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9b8b8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a0202; /* Adjusting header color */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increasing space between form fields */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px; /* Smaller margin for labels */
+  color: #4a0202; /* Adjusting label color */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px); /* Slight reduction in input width */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Adjusting margin */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f72525;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smoother transition */
+}
+
+button:hover {
+  background-color: #4a0202;
+}
