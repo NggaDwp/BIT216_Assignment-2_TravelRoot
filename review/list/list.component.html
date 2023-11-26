@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="title">
+      <h1>Review Tourism Product</h1>
+    </div>
+
+    <div class="margin-title">
+      <h4>List of Product <span class="badge bg-secondary"></span></h4>
+    </div>
+
+    <div class="dropdown">
+      <select id="nameDropdown" (change)="changeName()" class="dropdown-color">
+        <option value="Not">Not Reviewed</option>
+        <option value="Reviewed">Reviewed</option>
+      </select>
+    </div>
+
+    <div *ngFor="let item of reviewData">
+      <div class="center-container">
+        <div class="card mb-3" style="max-width: 700px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../../../assets//wisata.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">
+                  <img
+                    src="../../../assets/icon1.png"
+                    class="img-fluid rounded-start"
+                    alt=""
+                    style="height: 20px; width: 20px"
+                  />
+                  {{ item.MerchantName }}
+                </h6>
+                <div class="price">
+                  <span>Price: {{ item.Price }}</span>
+                </div>
+
+                <h5 class="card-title">{{ item.ProductName }}</h5>
+                <p class="card-text">
+                  {{ item.Description }}
+                </p>
+                <div class="button">
+                  <button
+                    *ngIf="!item.Reviewed"
+                    class="btn btn-danger"
+                    (click)="goToRatePage(item.ProductID)"
+                  >
+                    Review Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>

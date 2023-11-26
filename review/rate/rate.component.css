@@ -1,0 +1,61 @@
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 10px;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 24px;
+}
+span {
+  cursor: pointer;
+}
+span.star {
+  color: grey;
+}
+
+span.rated {
+  color: gold; /* warna bintang rated (ubah sesuai kebutuhan) */
+}
+svg {
+  width: 2em;
+  height: 2em;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 10px;
+}
+
+.word {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.margin-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.box-comment {
+  margin-top: 40px;
+}
+.button {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 30px;
+}
+
+.back {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
